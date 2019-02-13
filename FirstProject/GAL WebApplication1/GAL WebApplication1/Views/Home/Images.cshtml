@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Images";
+}
+
+<h2>Images</h2>
+
+
+@{
+    var imagePath = "";
+    if (Request["Choice"] != null)
+    { imagePath = "" + Request["Choice"]; }
+}
+
+    <h1>Display Images</h1>
+    <form method="post" action="">
+        I want to see:
+        <select name="Choice">
+            <option value="~/Content/Images/pic1.jpg">Photo 1</option>
+            <option value="~/Content/Images/pic2.jpg">Photo 2</option>
+            <option value="~/Content/Images/pic3.jpg">Photo 3</option>
+        </select>
+        <input type="submit" value="Submit">
+        @if (imagePath != "")
+        {
+            <p>
+                <img src="@imagePath" alt="Sample" height="300" width="200">
+            </p>
+        }
+    </form>

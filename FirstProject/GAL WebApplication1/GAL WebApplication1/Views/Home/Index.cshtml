@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>DAVE.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+<div class="row">
+    <p>The time is @DateTime.Now</p>
+</div>
+
+@{
+    var greeting = "Welcome to our site!";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + " Here in Huston it is: " + weekDay;
+}
+
+<p>The greeting is: @greetingMessage</p>
+
+@RenderPage("Images.cshtml")
+
+@RenderPage("David.cshtml")
+
+@*----------------------------------------------------------*@
+
+@{
+    var dataFile = Server.MapPath("~/App_Data/Persons.txt");
+    Array userData = File.ReadAllLines(dataFile);
+}
+
+
+    <h1>Reading Data from a File</h1>
+    @foreach (string dataLine in userData)
+    {
+        foreach (string dataItem in dataLine.Split(','))
+        {
+            @dataItem <text>&nbsp;</text>}
+        <br>
+    }

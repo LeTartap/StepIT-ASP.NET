@@ -1,0 +1,46 @@
+﻿@{
+//Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>David</h1>
+        <p>@ViewData["noflines"]</p>
+        @{
+            Random r = new Random();
+
+
+            for (int i = 1; i <= (int)ViewData["noflines"]; i++)
+            {
+                int randInt = r.Next(1, 4);
+                switch (randInt)
+                {
+                    case 1:
+                        {
+                            <button>ButonulMeu</button><br/>
+                            break;
+                        }
+                    case 2:
+                        {
+                            <input value="inputul meu"/><br/>
+                            break;
+                        }
+                    case 3:
+                        {
+                            <textarea textArea meu></textarea><br/>
+                            break;
+                        }                   
+                }
+            }
+
+        }
+    </div>
+</body>
+</html>

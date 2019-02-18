@@ -50,7 +50,7 @@ namespace WebApp2.Controllers
         {
             if(noflines==null)
             {
-                noflines = 1;
+                noflines = 0;
             }
             ViewData["noflines"] = noflines;
             return View("RandomLines");

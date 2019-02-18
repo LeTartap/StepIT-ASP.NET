@@ -78,3 +78,11 @@ C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers
 C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.csproj.CopyComplete
 C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.dll
 C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.pdb
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\bin\EntityFramework.dll
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\bin\EntityFramework.SqlServer.dll
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\bin\EntityFramework.xml
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\bin\EntityFramework.SqlServer.xml
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.Migrations.InitialCreate.resources
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.csproj.GenerateResource.cache
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.Migrations.NewColumnPriceRON.resources
+C:\Users\david\Documents\GitHub\StepIT-ASP.NET-\ASP.NET Working with controllers\WebApp2\WebApp2\obj\Debug\WebApp2.Migrations.NewColumnPriceRON1.resources

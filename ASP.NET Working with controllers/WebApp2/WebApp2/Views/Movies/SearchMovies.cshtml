@@ -1,0 +1,15 @@
+﻿    <div>
+        @model IEnumerable<RazorPagesMovie.Models.Movie>
+
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.ID</td>
+                <td>@p.Title</td>
+                <td>@p.ReleaseDate</td>
+                <td>@p.Genre</td>
+                <td>@p.Price</td>
+                <td>@p.PriceInRON</td>
+            </tr>
+        }
+    </div>

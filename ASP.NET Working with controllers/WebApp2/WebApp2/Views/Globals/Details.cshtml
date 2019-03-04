@@ -1,0 +1,34 @@
+﻿@model WebApp2.Models.Globals
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Globals</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.eurToRON)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eurToRON)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eurToUSD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eurToUSD)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

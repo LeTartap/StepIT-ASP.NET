@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using RazorPagesMovie.Models;
 using WebApp2.Models;
+using Newtonsoft.Json;
 
 namespace WebApp2.Controllers
 {
@@ -126,6 +127,21 @@ namespace WebApp2.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public string returnGenres() {
+
+            string json = JsonConvert.SerializeObject(db.Movies.Select(x => x.Genre).ToList());
+            return json;
+            
+        }
+
+        public PartialViewResult SearchMovies(string keyword)
+        {
+            System.Threading.Thread.Sleep(2000);
+            var data = db.Movies.Where(f =>
+            f.Title.StartsWith(keyword)||f.Genre.StartsWith(keyword)).ToList();
+            return PartialView(data);
         }
     }
 }

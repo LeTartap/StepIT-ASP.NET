@@ -20,5 +20,9 @@ namespace WebApp2.Models
         }
 
         public System.Data.Entity.DbSet<RazorPagesMovie.Models.Movie> Movies { get; set; }
+
+        public System.Data.Entity.DbSet<WebApp2.Models.Person> People { get; set; }
+
+        public System.Data.Entity.DbSet<WebApp2.Models.Globals> Globals { get; set; }
     }
 }

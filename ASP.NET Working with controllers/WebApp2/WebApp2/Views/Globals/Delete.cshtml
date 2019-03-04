@@ -1,0 +1,40 @@
+﻿@model WebApp2.Models.Globals
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Globals</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.eurToRON)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eurToRON)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.eurToUSD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eurToUSD)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

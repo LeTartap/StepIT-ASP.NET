@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <svg width="400" height="110">
+            <rect width="100" height="100" style="fill:red;stroke-width:3;stroke:rgb(0,0,0)" id="rect1" />
+        </svg>
+        <br />
+        <svg width="400" height="110">
+            <rect width="100" height="100" style="fill:rgb(255, 216, 0);stroke-width:3;stroke:rgb(0,0,0)" id="rect2" />
+        </svg>
+        <br />
+        <svg width="400" height="110">
+            <rect width="100" height="100" style="fill:rgb(0, 0, 255);stroke-width:3;stroke:rgb(0,0,0)"id="rect3" />
+        </svg>
+        <br />
+
+
+        <script src="~/Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            function executeQuerry() {
+                $.ajax({
+                    url: "/Square/changeColors",
+                    data: {
+                    },
+                    success: function (result) {
+                        //console.log(result);
+                        var arrayOfColors = jQuery.parseJSON(result);
+                        var count = 0;
+                        arrayOfColors.forEach(function (element) {
+                            console.log(element);
+                            if(count==0)
+                                $("#rect1").css({ "fill": element });
+                            else if (count==1)
+                                $("#rect2").css({ "fill": element });
+                            else
+                                $("#rect3").css({ "fill": element });
+                            count++;
+                        });
+                        console.log("-------")
+                    },
+                    error: function (result) {
+                        console.log(result);
+                    }
+                });
+                    setTimeout(executeQuerry, 3000);
+            }
+            $(document).ready(function () {
+                console.log("ready!");
+                setTimeout(executeQuerry, 1000);
+
+
+            });
+        </script>
+
+
+    </div>
+</body>
+</html>

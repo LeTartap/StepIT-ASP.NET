@@ -127,6 +127,7 @@
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Controllers\MyDemoController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\SquareController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,6 +214,8 @@
     <Content Include="Views\Globals\Edit.cshtml" />
     <Content Include="Views\Globals\Index.cshtml" />
     <Content Include="Views\Movies\SearchMovies.cshtml" />
+    <Content Include="Views\Square\Index.cshtml" />
+    <Content Include="Views\Square\IndexAsync.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
